@@ -11,6 +11,7 @@ import com.facebook.react.views.view.ReactViewGroup;
 
 public class RNDfpReactViewGroup extends ReactViewGroup {
     private String adUnitId = null;
+    private String templateId = null;
     private ReadableMap customTargeting = null;
 
     RNDfpReactViewGroup(Context context) {
@@ -23,6 +24,14 @@ public class RNDfpReactViewGroup extends ReactViewGroup {
 
     public String getAdUnitId() {
         return this.adUnitId;
+    }
+
+    public void setTemplateId(String templateId) {
+        this.templateId = templateId;
+    }
+
+    public String getTemplateId() {
+        return this.templateId;
     }
 
     public void setCustomTargeting(ReadableMap customTargeting) {

@@ -22,6 +22,7 @@ public class RNDfpPackage implements ReactPackage {
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         List<ViewManager> managers = new ArrayList<>();
         managers.add(new RNDfpBannerViewManager());
+        managers.add(new RNDfpNativeAdViewManager());
         return managers;
     }
 }
