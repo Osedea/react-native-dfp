@@ -11,7 +11,6 @@
 		1A3758101F2134A300C57EA5 /* RNDFPBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A37580F1F2134A300C57EA5 /* RNDFPBannerManager.m */; };
 		1A4F8F241F2B655C0096A4A6 /* RNDFPInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F8F231F2B655C0096A4A6 /* RNDFPInterstitial.m */; };
 		9DC7F39B232F96C700202BEF /* RNDFPNativeAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7F398232F96C600202BEF /* RNDFPNativeAdManager.m */; };
-		9DC7F39C232F96C700202BEF /* SimpleNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7F399232F96C600202BEF /* SimpleNativeAdView.m */; };
 		9DC7F39D232F96C700202BEF /* RNDFPNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7F397232F96C600202BEF /* RNDFPNativeAdView.m */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +38,6 @@
 		9DC7F396232F96C600202BEF /* RNDFPNativeAdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNDFPNativeAdView.h; path = "/Users/osedea/Projects/TVA/react-native-dfp/ios/RNDFPNativeAdView.h"; sourceTree = "<absolute>"; };
 		9DC7F397232F96C600202BEF /* RNDFPNativeAdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNDFPNativeAdView.m; path = "/Users/osedea/Projects/TVA/react-native-dfp/ios/RNDFPNativeAdView.m"; sourceTree = "<absolute>"; };
 		9DC7F398232F96C600202BEF /* RNDFPNativeAdManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RNDFPNativeAdManager.m; path = "/Users/osedea/Projects/TVA/react-native-dfp/ios/RNDFPNativeAdManager.m"; sourceTree = "<absolute>"; };
-		9DC7F399232F96C600202BEF /* SimpleNativeAdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SimpleNativeAdView.m; path = "/Users/osedea/Projects/TVA/react-native-dfp/ios/SimpleNativeAdView.m"; sourceTree = "<absolute>"; };
-		9DC7F39A232F96C600202BEF /* SimpleNativeAdView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SimpleNativeAdView.h; path = "/Users/osedea/Projects/TVA/react-native-dfp/ios/SimpleNativeAdView.h"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +72,6 @@
 				9DC7F398232F96C600202BEF /* RNDFPNativeAdManager.m */,
 				9DC7F396232F96C600202BEF /* RNDFPNativeAdView.h */,
 				9DC7F397232F96C600202BEF /* RNDFPNativeAdView.m */,
-				9DC7F39A232F96C600202BEF /* SimpleNativeAdView.h */,
-				9DC7F399232F96C600202BEF /* SimpleNativeAdView.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,7 +136,6 @@
 				1A3758101F2134A300C57EA5 /* RNDFPBannerManager.m in Sources */,
 				9DC7F39D232F96C700202BEF /* RNDFPNativeAdView.m in Sources */,
 				1A37580A1F212AEB00C57EA5 /* RNDFPBannerView.m in Sources */,
-				9DC7F39C232F96C700202BEF /* SimpleNativeAdView.m in Sources */,
 				9DC7F39B232F96C700202BEF /* RNDFPNativeAdManager.m in Sources */,
 				1A4F8F241F2B655C0096A4A6 /* RNDFPInterstitial.m in Sources */,
 			);

@@ -4,10 +4,8 @@ import {
   View,
 } from 'react-native';
 import PropTypes from 'proptypes';
-
-const RNBanner = requireNativeComponent('RNDFPBanner', DFPBanner);
-
 export default class DFPBanner extends React.Component {
+
 
   constructor() {
     super();
@@ -137,3 +135,5 @@ DFPBanner.defaultProps = {
     didFailToReceiveAdWithError: () => {},
     admobDispatchAppEvent: () => {}
 };
+
+const RNBanner = requireNativeComponent('RNDFPBanner', DFPBanner);

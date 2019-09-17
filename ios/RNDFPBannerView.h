@@ -18,7 +18,6 @@
 @property (nonatomic, copy) NSString *testDeviceID;
 
 @property (nonatomic, copy) RCTBubblingEventBlock onWillChangeAdSizeTo;
-
 @property (nonatomic, copy) RCTBubblingEventBlock onSizeChange;
 @property (nonatomic, copy) RCTBubblingEventBlock onAdmobDispatchAppEvent;
 @property (nonatomic, copy) RCTBubblingEventBlock onAdViewDidReceiveAd;

@@ -6,10 +6,7 @@ import {
 } from 'react-native';
 import PropTypes from 'proptypes';
 
-const RNDFPNativeAd = requireNativeComponent('RNDFPNativeAd');
-
 export default class DFPNativeAd extends React.Component {
-
   render() {
     const { assetName, adUnitID, adTemplateID, testDeviceID, didFailToReceiveAdWithError, admobDispatchAppEvent } = this.props;
     let { customTargeting } = this.props;
@@ -80,3 +77,5 @@ DFPNativeAd.defaultProps = {
     didFailToReceiveAdWithError: () => {},
     admobDispatchAppEvent: () => {}
 };
+
+const RNDFPNativeAd = requireNativeComponent('RNDFPNativeAd', DFPNativeAd);

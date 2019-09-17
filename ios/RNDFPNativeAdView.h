@@ -13,11 +13,11 @@
 @property (nonatomic, copy) NSDictionary *customTargeting;
 @property (nonatomic, copy) NSString *adUnitID;
 @property (nonatomic, copy) NSString *adTemplateID;
+@property (nonatomic, copy) NSString *assetName;
 @property (nonatomic, copy) NSString *testDeviceID;
+@property (nonatomic, copy) UIImageView *mainImageView;
+@property (nonatomic, retain) GADAdLoader *adLoader;
 
-@property (nonatomic, copy) RCTBubblingEventBlock onWillChangeAdSizeTo;
-
-@property (nonatomic, copy) RCTBubblingEventBlock onSizeChange;
 @property (nonatomic, copy) RCTBubblingEventBlock onAdmobDispatchAppEvent;
 @property (nonatomic, copy) RCTBubblingEventBlock onAdViewDidReceiveAd;
 @property (nonatomic, copy) RCTBubblingEventBlock onDidFailToReceiveAdWithError;
