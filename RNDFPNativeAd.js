@@ -1,16 +1,17 @@
 import React from 'react';
 import {
   requireNativeComponent,
+  StyleSheet,
   View,
 } from 'react-native';
 import PropTypes from 'proptypes';
 
-const RNNativeAd = requireNativeComponent('RNDFPNativeAd', DFPNativeAd);
+const RNDFPNativeAd = requireNativeComponent('RNDFPNativeAd');
 
 export default class DFPNativeAd extends React.Component {
 
   render() {
-    const { adUnitID, adTemplateID, testDeviceID, didFailToReceiveAdWithError, admobDispatchAppEvent } = this.props;
+    const { assetName, adUnitID, adTemplateID, testDeviceID, didFailToReceiveAdWithError, admobDispatchAppEvent } = this.props;
     let { customTargeting } = this.props;
 
     if (!customTargeting || Object.keys(customTargeting).length === 0) {
@@ -18,8 +19,9 @@ export default class DFPNativeAd extends React.Component {
     }
 
     return (
-      <View style={this.props.style}>
-        <RNNativeAd
+      <View style={{ ...StyleSheet.absoluteFillObject }}>
+        <RNDFPNativeAd
+          style={{ ...StyleSheet.absoluteFillObject }}
           onAdViewDidReceiveAd={this.props.adViewDidReceiveAd}
           onDidFailToReceiveAdWithError={(event) => didFailToReceiveAdWithError(event.nativeEvent.error)}
           onAdViewWillPresentScreen={this.props.adViewWillPresentScreen}
@@ -30,7 +32,8 @@ export default class DFPNativeAd extends React.Component {
           customTargeting={customTargeting}
           testDeviceID={testDeviceID}
           adUnitID={adUnitID}
-          adTemplateID={adTemplateId}
+          adTemplateID={adTemplateID}
+          assetName={assetName}
         />
       </View>
     );
@@ -54,7 +57,7 @@ DFPNativeAd.propTypes = {
    * Template for the native ad
    */
   adTemplateID: PropTypes.string,
-  
+
   /**
    * Test device ID
    */

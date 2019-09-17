@@ -1,6 +1,7 @@
 package com.rndfp;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.views.view.ReactViewGroup;
@@ -11,8 +12,10 @@ import com.facebook.react.views.view.ReactViewGroup;
 
 public class RNDfpReactViewGroup extends ReactViewGroup {
     private String adUnitId = null;
-    private String templateId = null;
     private ReadableMap customTargeting = null;
+    // For NativeAd only
+    private String adTemplateId = null;
+    private String assetName = null;
 
     RNDfpReactViewGroup(Context context) {
         super(context);
@@ -26,13 +29,15 @@ public class RNDfpReactViewGroup extends ReactViewGroup {
         return this.adUnitId;
     }
 
-    public void setTemplateId(String templateId) {
-        this.templateId = templateId;
+    public void setAdTemplateId(String adTemplateId) {
+        this.adTemplateId = adTemplateId;
     }
 
-    public String getTemplateId() {
-        return this.templateId;
-    }
+    public String getAssetName() { return this.assetName; }
+
+    public void setAssetName(String assetName) { this.assetName = assetName; }
+
+    public String getAdTemplateId() { return this.adTemplateId; }
 
     public void setCustomTargeting(ReadableMap customTargeting) {
         this.customTargeting = customTargeting;

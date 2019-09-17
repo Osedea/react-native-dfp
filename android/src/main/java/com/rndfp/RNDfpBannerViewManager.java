@@ -80,6 +80,7 @@ public class RNDfpBannerViewManager extends SimpleViewManager<RNDfpReactViewGrou
 
   @Override
   protected RNDfpReactViewGroup createViewInstance(ThemedReactContext themedReactContext) {
+      Log.i("PublisherAdBanner", "create view instance in Banner");
     mThemedReactContext = themedReactContext;
     mEventEmitter = themedReactContext.getJSModule(RCTEventEmitter.class);
     RNDfpReactViewGroup view = new RNDfpReactViewGroup(themedReactContext);
